@@ -27,7 +27,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 
-	<div class="hospital">
+	<div class="shelters">
 		<h2>Map of Fallout Shelters</h2>
 	</div>
 	<div id="map0all">
@@ -39,8 +39,8 @@
 			<div class="map0-overlay-inner">
 				<h3>Legend</h3>
 				<div class="legend">
-					<svg width= "62" height="10">
-					<circle id="plate" cx="30" cy="5" r="5" fill="#cc66ff"/>
+					<svg width= "62" height="12">
+					<circle id="plate" cx="30" cy="6" r="5" fill="#cc66ff"/>
 					</svg>
 					<text>1 Fallout Shelters</text>
 				</div>
@@ -82,9 +82,7 @@
 	</div>
 	<div class="data">
 		<h2>Data comes from </h2>
-		<ul>
-			<li> The locations of fallout shelters listed in "Community Shelter Plan Study for Washington, DC."</li>
-		</ul>
+		 <p>The locations of fallout shelters listed in "Community Shelter Plan Study for Washington, DC."</p>
 	</div>
 
 	<script>
@@ -96,7 +94,7 @@
 	 //map0
 	 var map0 = new mapboxgl.Map({
  	    container: 'map0',
- 	    style: 'mapbox://styles/mapbox/streets-v11',
+ 	    style: 'mapbox://styles/mapbox/dark-v10',
  	    zoom: 11, // starting zoom
 			center:[-76.95, 38.9]
  	});
@@ -153,7 +151,7 @@
 				filter: ['has', 'point_count'],
 				layout: {
 				'text-field': '{point_count_abbreviated}',
-				'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+				'text-font': ['Open Sans Regular', 'Arial Unicode MS Bold'],
 				'text-size': 12
 				}
 				});
@@ -165,7 +163,7 @@
 					filter: ['!', ['has', 'point_count']],
 					paint: {
 					'circle-color': '#cc66ff',
-					'circle-radius': 5
+					'circle-radius': 5,
 					}
 					});
 								});

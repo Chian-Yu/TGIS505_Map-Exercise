@@ -1,116 +1,67 @@
-#map1, #map0{
+#map0{
   width: 100%;
-  height: 550px;
+  height: 520px;
   margin: auto;
 }
-#ageChart{
-  margin: auto;
-}
-.chart
-{
+#map0all{
   max-width: 1020px;
-  margin: 10px auto;
-}
-#protecttext{
-  width: 50%;
-  float: left;
-}
-#protectimg{
-  width: 50%;
-  float: right;
-}
-#map1all, #map0all{
-  max-width: 1020px;
-  margin: 10px auto;
+  margin: 5px auto;
   position:relative;
 }
 
 h2{
   font-size: 30px;
-  color: #00004d;
+  color: #000000;
   background-color:rgb(255, 255, 0);
   line-height: 40px;
   text-align:center;
   font-family: "Broadway", serif;
   font-weight: bold;
 }
-
 h3{
   font-size: 25px;
   font-family: "Broadway", serif;
   font-weight: bold;
+  text-align:center;
+  margin: auto;
+  line-height: 35px;
+}
+p{
+  font-size: 18px;
+  color: rgb(255, 255, 0);
+  font-family: "Broadway", serif;
 }
 body{
   max-width: 1020px;
-  font-family: 'Arial', serif;
+  font-family: "Arial", serif;
+  color: rgb(0, 0, 0);
   font-size: 16px;
 	margin: auto;
   text-align: justify;
   padding: 10px;
-}
-.map1-overlay,.map0-overlay{
-  position: absolute;
-  right: 0px;
-  top: 110px;
-  width: 250px;
-  padding: 10px;
+  background-color:rgb(0, 0, 0);
 }
 .map0-overlay{
-  top: 250px;
+  position: absolute;
+  right: 0px;
+  top: 185px;
   width: 300px;
+  padding: 10px;
 }
 .IMG{
   position: absolute;
-  right: 0px;
-  top: 380px;
+  right: -15px;
+  top: 280px;
   width: 0px;
   padding: 0px;
 }
 #img{
-  width:200px
+  width:230px
 }
-.map1-overlay-inner,.map0-overlay-inner{
+.map0-overlay-inner{
   background-color: rgb(255, 255, 255, 0.8);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  padding: 7px;
-  margin-bottom: 10px;
+  padding: 3px;
   display: block;
-}
-.map1-overlay h3, .map0-overlay h3{
-  text-align:center;
-  line-height: 26px;
-  margin: auto;
-}
-#menu {
-  background-color: rgb(255, 255, 255, 0.8);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: -80px;
-  right: 10px;
-  border-radius: 3px;
-}
-#menu a {
-color: #990000;
-display: block;
-margin: auto;
-padding: 10px;
-text-decoration: none;
-border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-text-align: center;
-}
-#menu a:hover {
-background-color: #b30000;
-color: #ffffcc;
-border-radius: 3px;
-}
-#menu a.active {
-background-color: #cc0000;
-color: #ffffff;
-border-radius: 3px;
-}
-#menu a.active:hover {
-background: #ffffcc;
-color: #b30000;
-border-radius: 3px;
 }
